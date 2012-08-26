@@ -16,6 +16,10 @@ app.get('/webrtc.io.js', function(req, res) {
   res.sendfile(__dirname + '/webrtc.io.js');
 });
 
+app.get('/client.js', function(req, res) {
+  res.sendfile(__dirname + '/client.js');
+});
+
 
 webRTC.rtc.on('connect', function(rtc) {
   //Client connected
